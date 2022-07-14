@@ -9,8 +9,8 @@ fn main() {
     println!("Success!");
 }   
 
-fn check_color(p: Color) {
-    let (x, _, _) = p;
+fn check_color(p: Point) {
+    let Point(x, _, _) = p;
     assert_eq!(x, 0);
     assert_eq!(p.1, 127);
     assert_eq!(p.2, 255);
